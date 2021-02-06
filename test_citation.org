@@ -1,0 +1,14 @@
+#+TITLE: Teste
+#+AUTHOR: Gabe
+#+BIBLIOGRAPHY: library plain
+
+
+* Training
+
+
+Citando aqui. \cite{Wirthlin2018}
+
+Citando novamente. \cite{Vieira2019,Valdez-Velazquez2020,Zhang2014}
+
+\bibliography{library}
+\bibliographystyle{plain}
