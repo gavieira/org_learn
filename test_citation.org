@@ -5,10 +5,13 @@
 
 * Training
 
+To succesfully create pdfs with citations from org-export-dispatch, you have to change the variable `org-latex-pdf-process` to use latexmk instead of latex, as described in  [[https://github.com/jkitchin/org-ref/issues/346][_this link_]].
 
-Citando aqui. \cite{Wirthlin2018}
+In *doom emacs*, you can change this variable in ~/.doom.d/custom.el
 
-Citando novamente. \cite{Vieira2019,Valdez-Velazquez2020,Zhang2014}
+Citing here. \cite{Wirthlin2018}
+
+Citing again. \cite{Vieira2019,Valdez-Velazquez2020,Zhang2014}
 
 \bibliography{library}
 \bibliographystyle{plain}
