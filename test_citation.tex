@@ -1,0 +1,46 @@
+% Created 2021-03-22 Mon 11:50
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Gabe}
+\date{\today}
+\title{Teste}
+\hypersetup{
+ pdfauthor={Gabe},
+ pdftitle={Teste},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Training}
+\label{sec:orgbdfe927}
+
+To succesfully create pdfs with citations from org-export-dispatch, you have to change the variable `org-latex-pdf-process` to use latexmk instead of latex, as described in  \href{https://github.com/jkitchin/org-ref/issues/346}{\uline{this link}}.
+
+In \textbf{doom emacs}, you can change this variable in \textasciitilde{}/.doom.d/custom.el
+
+Citing here. \cite{Wirthlin2018}
+
+Citing again. \cite{Vieira2019,Valdez-Velazquez2020,Zhang2014}
+
+\bibliography{library}
+\bibliographystyle{apalike}
+\end{document}
